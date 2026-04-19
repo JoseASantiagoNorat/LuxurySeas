@@ -1,0 +1,322 @@
+<!-- Nombre: José A. Santiago Norat --> 
+<!-- Número de estudiante: 843-22-9064 --> 
+<!-- Fecha: Abril 8, 2026 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Seas | Inicio</title>
+
+<style>
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #111;
+    line-height: 1.6;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* ===== HEADER (IGUAL QUE SERVICIOS) ===== */
+header {
+    background: #111;
+    color: white;
+    padding: 25px;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.6s;
+}
+
+header.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header p {
+    color: #aaa;
+}
+
+/* ===== NAV ===== */
+nav {
+    background: #1a1a1a;
+    padding: 12px;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.6s;
+}
+
+nav.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav a {
+    color: #ccc;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* línea roja */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #8b0000;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+                url("images/hero.jpg") center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card h2 {
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+/* ===== BOTES ===== */
+.boats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.boat {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.boat.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.boat img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.boat h3 {
+    padding: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Luxury Seas</h1>
+    <p>Experiencias marítimas y alquiler de botes en Ponce</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="#">Galería</a>
+    <a href="#">Seguridad</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<section class="hero">
+    <div>
+        <h2>Descubre el mar en Ponce</h2>
+        <p>Experiencias únicas en la costa sur de Puerto Rico</p>
+    </div>
+</section>
+
+<main>
+
+<section class="card">
+    <h2>Bienvenidos</h2>
+    <p>
+        Luxury Seas redefine la experiencia marítima en Ponce, combinando elegancia,
+        accesibilidad y seguridad en cada viaje.
+    </p>
+</section>
+
+<section class="card">
+    <h2>Experiencia Premium</h2>
+    <p>
+        Navega en embarcaciones modernas con opciones diseñadas tanto para principiantes
+        como para aventureros del mar.
+    </p>
+</section>
+
+<section class="card">
+    <h2>Nuestros Botes</h2>
+
+    <div class="boats">
+
+        <article class="boat">
+            <img src="images/boat1.jpg">
+            <h3>Lancha Moderna</h3>
+        </article>
+
+        <article class="boat">
+            <img src="images/boat2.jpg">
+            <h3>Lancha Deportiva</h3>
+        </article>
+
+        <article class="boat">
+            <img src="images/boat3.jpg">
+            <h3>Lancha Costera</h3>
+        </article>
+
+        <article class="boat">
+            <img src="images/boat4.jpg">
+            <h3>Experiencia Premium</h3>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Luxury Seas © 2026<br>Ponce, Puerto Rico</p>
+</footer>
+
+<script>
+
+/* LOAD */
+window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
+
+    document.querySelector("header").classList.add("show");
+    document.querySelector("nav").classList.add("show");
+
+    document.querySelectorAll(".card, .boat").forEach(el => {
+        el.classList.add("show");
+    });
+});
+
+/* SCROLL */
+const elements = document.querySelectorAll(".card, .boat");
+
+window.addEventListener("scroll", () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+});
+
+/* TRANSITION */
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const href = this.getAttribute("href");
+
+        if (href && !href.startsWith("#")) {
+            e.preventDefault();
+
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 300);
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
