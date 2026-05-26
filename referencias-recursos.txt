@@ -1,0 +1,20 @@
+Referencias de recursos externos usados en Luxury Seas
+
+Imagenes nuevas de galeria:
+
+1. La Guancha air view.jpg
+   Fuente: Wikimedia Commons
+   URL: https://commons.wikimedia.org/wiki/File:La_Guancha_air_view.jpg
+   Uso: imagen de La Guancha en la pagina galeria.
+
+2. Ponce La Guancha Beach.jpg
+   Fuente: Wikimedia Commons
+   URL: https://commons.wikimedia.org/wiki/File:Ponce_La_Guancha_Beach.jpg
+   Uso: imagen de playa/costa en la pagina galeria.
+
+3. Playa de La Guancha, Complejo Recreativo La Guancha, Bo. Playa, Ponce, Puerto Rico, mirando al este (DSC02758B).jpg
+   Fuente: Wikimedia Commons
+   URL: https://commons.wikimedia.org/wiki/File:Playa_de_La_Guancha,_Complejo_Recreativo_La_Guancha,_Bo._Playa,_Ponce,_Puerto_Rico,_mirando_al_este_(DSC02758B).jpg
+   Uso: imagen de costa de Ponce en la pagina galeria.
+
+Nota: las imagenes fueron descargadas localmente y convertidas a formato WebP para mejorar el rendimiento del sitio.

@@ -1,322 +1,145 @@
-<!-- Nombre: José A. Santiago Norat --> 
-<!-- Número de estudiante: 843-22-9064 --> 
-<!-- Fecha: Abril 8, 2026 -->
+<!-- Nombre: Jose A. Santiago Norat -->
+<!-- Numero de estudiante: 843-22-9064 -->
+<!-- Fecha: Mayo 26, 2026 -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Seas | Inicio</title>
-
-<style>
-
-/* ===== RESET ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===== BASE ===== */
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    color: #111;
-    line-height: 1.6;
-
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-body.loaded {
-    opacity: 1;
-}
-
-/* ===== HEADER (IGUAL QUE SERVICIOS) ===== */
-header {
-    background: #111;
-    color: white;
-    padding: 25px;
-    text-align: center;
-
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: 0.6s;
-}
-
-header.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-header p {
-    color: #aaa;
-}
-
-/* ===== NAV ===== */
-nav {
-    background: #1a1a1a;
-    padding: 12px;
-    text-align: center;
-
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: 0.6s;
-}
-
-nav.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-nav a {
-    color: #ccc;
-    margin: 0 15px;
-    text-decoration: none;
-    position: relative;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: white;
-}
-
-/* línea roja */
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #8b0000;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
-    width: 100%;
-}
-
-/* ===== HERO ===== */
-.hero {
-    height: 400px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-                url("images/hero.jpg") center/cover no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero h2 {
-    font-size: 40px;
-}
-
-.hero p {
-    margin-top: 10px;
-}
-
-/* ===== MAIN ===== */
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-/* ===== CARDS ===== */
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-
-    margin-bottom: 25px;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.6s;
-}
-
-.card.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.card h2 {
-    color: #8b0000;
-    margin-bottom: 10px;
-}
-
-/* ===== BOTES ===== */
-.boats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.boat {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.6s;
-}
-
-.boat.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.boat img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.boat h3 {
-    padding: 15px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background: #111;
-    color: #aaa;
-    text-align: center;
-    padding: 25px;
-    margin-top: 50px;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury Seas ofrece alquiler de botes y experiencias marítimas en el área del malecón de Ponce, Puerto Rico.">
+    <title>Luxury Seas | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
-
 <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<header>
-    <h1>Luxury Seas</h1>
-    <p>Experiencias marítimas y alquiler de botes en Ponce</p>
-</header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Luxury Seas</a>
+            <p class="tagline">Experiencias marítimas y alquiler de botes en Ponce, Puerto Rico</p>
+        </div>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="seguridad.html">Seguridad</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="#">Galería</a>
-    <a href="#">Seguridad</a>
-    <a href="#">Contacto</a>
-</nav>
+    <section class="hero">
+        <div class="container hero-content reveal">
+            <p class="eyebrow">Malecón de Ponce</p>
+            <h1>Descubre la costa sur desde el mar</h1>
+            <p>Alquiler de botes, paseos guiados y experiencias privadas para disfrutar Ponce de una manera segura, simple y memorable.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="servicios.html">Ver servicios</a>
+                <a class="button button-secondary" href="contacto.html">Solicitar información</a>
+            </div>
+        </div>
+    </section>
 
-<section class="hero">
-    <div>
-        <h2>Descubre el mar en Ponce</h2>
-        <p>Experiencias únicas en la costa sur de Puerto Rico</p>
-    </div>
-</section>
+    <main id="contenido">
+        <section class="container section-block reveal">
+            <div class="section-head">
+                <h2>Bienvenidos a Luxury Seas</h2>
+                <p>
+                    Luxury Seas es un concepto local enfocado en ofrecer experiencias marítimas accesibles,
+                    organizadas y seguras en el área de Ponce. El sitio sirve como guía informativa para
+                    quienes desean conocer opciones antes de coordinar una salida al mar.
+                </p>
+            </div>
+        </section>
 
-<main>
+        <div class="container section-block">
+            <div class="grid grid-3">
+                <article class="card accent-card reveal">
+                    <h3>Experiencias Flexibles</h3>
+                    <p>Opciones para familias, parejas, grupos de amistades y visitantes que quieren explorar la costa con tranquilidad.</p>
+                </article>
 
-<section class="card">
-    <h2>Bienvenidos</h2>
-    <p>
-        Luxury Seas redefine la experiencia marítima en Ponce, combinando elegancia,
-        accesibilidad y seguridad en cada viaje.
-    </p>
-</section>
+                <article class="card reveal">
+                    <h3>Servicio Guiado</h3>
+                    <p>Posibilidad de disfrutar el paseo con un capitán para que el grupo se concentre en la experiencia.</p>
+                </article>
 
-<section class="card">
-    <h2>Experiencia Premium</h2>
-    <p>
-        Navega en embarcaciones modernas con opciones diseñadas tanto para principiantes
-        como para aventureros del mar.
-    </p>
-</section>
+                <article class="card reveal">
+                    <h3>Enfoque Seguro</h3>
+                    <p>Información clara sobre requisitos, equipo básico y condiciones del clima antes de salir al mar.</p>
+                </article>
+            </div>
+        </div>
 
-<section class="card">
-    <h2>Nuestros Botes</h2>
+        <section class="container section-block">
+            <div class="section-head reveal">
+                <h2>Nuestros Botes</h2>
+                <p>Una selección visual de embarcaciones y estilos de paseo que representan la experiencia de Luxury Seas.</p>
+            </div>
 
-    <div class="boats">
+            <div class="grid grid-4">
+                <figure class="image-card reveal">
+                    <picture>
+                        <source srcset="images/optimized/boat1.webp" type="image/webp">
+                        <img src="images/boat1.jpg" width="900" height="600" loading="lazy" alt="Lancha moderna navegando cerca de la costa">
+                    </picture>
+                    <figcaption>
+                        <h3>Lancha Moderna</h3>
+                        <p>Ideal para paseos cómodos y tranquilos.</p>
+                    </figcaption>
+                </figure>
 
-    <article class="boat">
-        <img src="images/boat1.jpg" alt="Lancha moderna navegando en la costa de Ponce">
-        <h3>Lancha Moderna</h3>
-    </article>
+                <figure class="image-card reveal">
+                    <picture>
+                        <source srcset="images/optimized/boat2.webp" type="image/webp">
+                        <img src="images/boat2.jpg" width="900" height="601" loading="lazy" alt="Lancha deportiva preparada para una salida recreativa">
+                    </picture>
+                    <figcaption>
+                        <h3>Lancha Deportiva</h3>
+                        <p>Una opción dinámica para grupos pequeños.</p>
+                    </figcaption>
+                </figure>
 
-    <article class="boat">
-        <img src="images/boat2.jpg" alt="Lancha deportiva en el mar de Puerto Rico">
-        <h3>Lancha Deportiva</h3>
-    </article>
+                <figure class="image-card reveal">
+                    <picture>
+                        <source srcset="images/optimized/boat3.webp" type="image/webp">
+                        <img src="images/boat3.jpg" width="900" height="477" loading="lazy" alt="Lancha costera en aguas tranquilas">
+                    </picture>
+                    <figcaption>
+                        <h3>Lancha Costera</h3>
+                        <p>Perfecta para apreciar el paisaje del sur.</p>
+                    </figcaption>
+                </figure>
 
-    <article class="boat">
-        <img src="images/boat3.jpg" alt="Lancha costera cerca del malecón de Ponce">
-        <h3>Lancha Costera</h3>
-    </article>
+                <figure class="image-card reveal">
+                    <picture>
+                        <source srcset="images/optimized/boat4.webp" type="image/webp">
+                        <img src="images/boat4.jpg" width="900" height="600" loading="lazy" alt="Embarcación privada para una experiencia premium">
+                    </picture>
+                    <figcaption>
+                        <h3>Experiencia Privada</h3>
+                        <p>Ambiente más íntimo para ocasiones especiales.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <article class="boat">
-        <img src="images/boat4.jpg" alt="Experiencia premium en lancha privada">
-        <h3>Experiencia Premium</h3>
-    </article>
+        <section class="container section-block reveal">
+            <div class="content-panel">
+                <h2>Planifica con confianza</h2>
+                <p class="lead">
+                    Las actividades dependen de las condiciones del clima y se coordinan con anticipación.
+                    Para detalles sobre disponibilidad, duración o requisitos, puedes comunicarte directamente
+                    con Luxury Seas desde la página de contacto.
+                </p>
+            </div>
+        </section>
+    </main>
 
-    </div>
-
-</section>
-
-</main>
-
-<footer>
-    <p>Luxury Seas © 2026<br>Ponce, Puerto Rico</p>
-</footer>
-
-<script>
-
-/* LOAD */
-window.addEventListener("load", () => {
-    document.body.classList.add("loaded");
-
-    document.querySelector("header").classList.add("show");
-    document.querySelector("nav").classList.add("show");
-
-    document.querySelectorAll(".card, .boat").forEach(el => {
-        el.classList.add("show");
-    });
-});
-
-/* SCROLL */
-const elements = document.querySelectorAll(".card, .boat");
-
-window.addEventListener("scroll", () => {
-    elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-
-        if (top < window.innerHeight - 100) {
-            el.classList.add("show");
-        }
-    });
-});
-
-/* TRANSITION */
-document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e) {
-        const href = this.getAttribute("href");
-
-        if (href && !href.startsWith("#")) {
-            e.preventDefault();
-
-            document.body.classList.remove("loaded");
-
-            setTimeout(() => {
-                window.location.href = href;
-            }, 300);
-        }
-    });
-});
-
-</script>
-
+    <footer class="site-footer">
+        <div class="container">
+            <p><strong>Luxury Seas</strong> © 2026<br>Ponce, Puerto Rico</p>
+        </div>
+    </footer>
 </body>
 </html>

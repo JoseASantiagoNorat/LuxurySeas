@@ -1,0 +1,105 @@
+<!-- Nombre: Jose A. Santiago Norat -->
+<!-- Numero de estudiante: 843-22-9064 -->
+<!-- Fecha: Mayo 26, 2026 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contacto de Luxury Seas para solicitar información sobre alquiler de botes y paseos marítimos en Ponce.">
+    <title>Luxury Seas | Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Luxury Seas</a>
+            <p class="tagline">Experiencias marítimas y alquiler de botes en Ponce, Puerto Rico</p>
+        </div>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="galeria.html">Galería</a>
+            <a href="seguridad.html">Seguridad</a>
+            <a href="contacto.html" aria-current="page">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container reveal">
+            <h1>Contacto</h1>
+            <p>Comunícate para solicitar información sobre servicios, disponibilidad, requisitos o coordinación de una experiencia marítima.</p>
+        </div>
+    </section>
+
+    <main id="contenido">
+        <section class="container section-block">
+            <div class="grid grid-2">
+                <div class="contact-card concierge-card reveal">
+                    <h2>Solicita información</h2>
+                    <p class="lead">Este formulario es una forma sencilla de organizar la información inicial antes de dar seguimiento directo.</p>
+
+                    <form class="form" data-contact-form>
+                        <label for="nombre">
+                            Nombre
+                            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                        </label>
+
+                        <label for="email">
+                            Correo electrónico
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </label>
+
+                        <label for="servicio">
+                            Servicio de interés
+                            <select id="servicio" name="servicio">
+                                <option value="alquiler">Alquiler libre</option>
+                                <option value="capitan">Paseo con capitán</option>
+                                <option value="costero">Paseo costero</option>
+                                <option value="privado">Experiencia privada</option>
+                            </select>
+                        </label>
+
+                        <label for="mensaje">
+                            Mensaje
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </label>
+
+                        <button class="button button-primary" type="submit">Enviar mensaje</button>
+                        <p class="form-message" aria-live="polite" data-form-message></p>
+                    </form>
+                </div>
+
+                <aside class="contact-card contact-details reveal">
+                    <h2>Información general</h2>
+                    <div class="info-row">
+                        <strong>Ubicación</strong>
+                        <span>Malecón de Ponce, Puerto Rico</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Horario</strong>
+                        <span>Disponible por coordinación previa</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Servicios</strong>
+                        <span>Alquiler de botes, paseos costeros y experiencias privadas</span>
+                    </div>
+                    <div class="info-row">
+                        <strong>Nota</strong>
+                        <span>Las actividades dependen de la disponibilidad y de las condiciones marítimas.</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p><strong>Luxury Seas</strong> © 2026<br>Ponce, Puerto Rico</p>
+        </div>
+    </footer>
+</body>
+</html>
